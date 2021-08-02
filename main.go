@@ -3,23 +3,23 @@ package main
 import "fmt"
 
 func main() {
-	var a int
+	var num1 int
 	fmt.Print("Enter the number 1: ")
-	fmt.Scan(&a)
+	fmt.Scan(&num1)
 
-	var b int
+	var num2 int
 	fmt.Print("Enter the number 2: ")
-	fmt.Scan(&b)
+	fmt.Scan(&num2)
 
 	var nod int
 
-	for ;a != 0 && b != 0; {
-		if a >= b {
-			nod = b
-			a = a % b
+	for ;num1 != 0 && num2 != 0; {
+		if num1 >= num2 {
+			nod = num2
+			num1 = num1 % num2
 		}else {
-			nod = a
-			b = b % a
+			nod = num1
+			num2 = num2 % num1
 		}
 	}
 
