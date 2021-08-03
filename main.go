@@ -13,7 +13,7 @@ func main() {
 
 	var nod int
 
-	for ;num1 != 0 && num2 != 0; {
+	for num1 != 0 && num2 != 0 {
 		if num1 >= num2 {
 			nod = num2
 			num1 = num1 % num2
